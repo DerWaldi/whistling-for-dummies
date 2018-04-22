@@ -1,0 +1,144 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #2D5D7B;
+  height: 60px;
+  padding: 2px;
+  color: #fff;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  position: relative;
+  font-size: 2em;
+  width: 100%;
+  margin-top: 15px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.PianoRollRenderer {
+  width: 100%;
+  height: calc(100% - 74px);
+  background: #9191E9;
+}
+
+.PianoRollRenderer > canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.YouTube {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+
+@font-face {
+  font-family: 'SomeTimeLater'; /*a name to be used later*/
+  src: url('fonts/sometimelater.otf'); /*URL to font*/
+}
+
+.MenuTitle {
+  font-family: SomeTimeLater;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.MainMenuItem {
+  height:50px;
+  width:500px;
+  background:#006680;
+  text-align:center;
+  font-size:30px;
+  color:white;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;  
+  margin: auto;
+  text-decoration: none;
+  
+  touch-action: pan-y pinch-zoom;
+}
+
+.MainMenuItem:hover {
+  background:#7A0000;
+  color:white;
+   
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);  
+}
+
+.MainMenuItem p {
+  display: block;
+  padding-top: 10px; 
+  text-decoration: none;
+}
+
+.MenuItemList {
+  text-align: center;
+}
+
+.Tutorial {  
+  height: calc(100% - 74px);
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 64px;
+}
+
+.TutorialDestTone {
+  color: #fff;
+  font-size: 1em;
+  padding: 5px;
+  margin: 0;
+  width: 49%;
+  text-align: left;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.TutorialCurTone{
+  color: #fff;
+  font-size: 1em;
+  padding: 5px;
+  margin: 0;
+  width: 49%;
+  text-align: right;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.TutorialDescription {
+  color: #fff;
+  font-size: 1em;
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
