@@ -13,5 +13,5 @@ npm install
 ```
 #### Build and Run
 ```
-npm run
+yarn start
 ```
