@@ -4,7 +4,7 @@ React.js code of the april fools app by Melody Scanner.
 
 ## HowTo Run
 
-#### Load node_modules
+#### Load dependancies from npm
 ```
 npm install
 ```
